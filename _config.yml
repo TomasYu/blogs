@@ -5,7 +5,7 @@ locale: en_US
 description: Describe your website here.
 logo: site-logo.png
 search: true
-url: https://tomasyu.github.io
+url: https://tomasyu.github.io/so-simple-theme/
 # Jekyll configuration
 
 permalink:   /:categories/:title/
