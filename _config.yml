@@ -5,7 +5,7 @@ locale: en_US
 description: Describe your website here.
 logo: site-logo.png
 search: true
-url: https://tomasyu.github.io/so-simple-theme/
+url: https://tomasyu.github.io/blogs/
 # Jekyll configuration
 
 permalink:   /:categories/:title/
@@ -35,10 +35,10 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
+  name: Tomas Yu
   avatar: bio-photo.jpg
-  email: you@email.com
-  disqus-shortname:
+  email: coaxinyu@gmail.com
+  disqus-shortname: Yu
   twitter: #username
   facebook: #username
   github: #username
