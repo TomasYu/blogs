@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "android apk瘦身之 图片压缩 tinypng "
+title: "android apk瘦身之图片压缩-tinypng"
 modified:
 categories: blog
 excerpt:
