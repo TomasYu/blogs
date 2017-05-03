@@ -122,7 +122,7 @@ modified: 2016-06-01T14:19:19-04:00
 
 	task backUpSdk(type: Copy){
 	    //厂商名字
-	    def changshang ='vivo'
+	    def changshang ='weimi'
 	
 	    def files = file('../signedApk').listFiles()
 	    //排序，取最后生成的
@@ -137,11 +137,30 @@ modified: 2016-06-01T14:19:19-04:00
 	        include files.getAt(2).name
 	    }
 	
+	    //备份sdk
+	    from('../IreaderPlugSdk/build/intermediates/bundles/release'){
+	        include 'classes.jar'
+	    }
+	
+	//    // Use a closure to map the file name
+	//    rename { String fileName ->
+	//        fileName.replace('calsses.jar', '')
+	//    }
+	    // Use a regular expression to map the file name
+	    //重命名
+	    rename 'classes.jar', 'IreaderPlugSdk.jar'
+	
+	    //备份mapping
+	    from('../IreaderPlugSdk/build/outputs/mapping/release'){
+	        include 'mapping.txt'
+	    }
+	
+	    rename 'mapping.txt','IreaderPlugSdk-mapping.txt'
+	
 	    def backUpPath ='F:/ireader_work_changshang/backUpSdk/'+changshang+'/'+ getVersion()
 	
 	    println backUpPath
 	    into(backUpPath)
-	
 	}
 	
 	
@@ -164,6 +183,7 @@ modified: 2016-06-01T14:19:19-04:00
 	    def mainfest =new XmlSlurper().parse(file('src/main/AndroidManifest.xml'))
 	    return mainfest.getProperty('@android:versionName')
 	}
+
 
 
 
