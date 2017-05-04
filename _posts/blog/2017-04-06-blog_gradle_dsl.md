@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "电脑多屏显示分辨率问题 "
+title: "groovy dsl simple "
 modified:
 categories: blog
 excerpt:
