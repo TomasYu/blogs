@@ -28,7 +28,7 @@ Android 的图片压缩其实压缩比很小。tinypng 大概可以压缩20%左�
 # 使用：  #
 1。安装python
 
-2.使用pip进行安装tinypng的api：pip install –upgrade tinify
+2.使用pip进行安装tinypng的api：pip install –-upgrade tinify
 
 3。执行脚本,脚本如下：
 
